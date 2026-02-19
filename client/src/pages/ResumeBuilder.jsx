@@ -135,7 +135,7 @@ const saveResume = async () => {
             <div className='bg-white rounded-lg shadow-sm border border-gray-200 p-6 pt-1'>
               {/* progress bar using activeSectionIndex */}
               <hr className="absolute top-0 left-0 right-0 border-2 border-gray-200"/>
-              <hr className="absolute top-0 left-0  h-1 bg-gradient-to-r from-green-500 to-green-600 border-none transition-all duration-2000" style={{width: `${activeSectionIndex * 100 / (sections.length - 1)}%`}}/>
+              <hr className="absolute top-0 left-0  h-1 bg-gradient-to-r from-blue-500 to-blue-600 border-none transition-all duration-2000" style={{width: `${activeSectionIndex * 100 / (sections.length - 1)}%`}}/>
 
               {/* Section Navigation */}
               <div className="flex justify-between items-center mb-6 border-b border-gray-300 py-1">
@@ -179,7 +179,7 @@ const saveResume = async () => {
                   )}
                   
               </div>
-              <button onClick={()=> {toast.promise(saveResume, {loading: 'Saving...'})}} className='bg-gradient-to-br from-green-100 to-green-200 ring-green-300 text-green-600 ring hover:ring-green-400 transition-all rounded-md px-6 py-2 mt-6 text-sm'>
+              <button onClick={()=> {toast.promise(saveResume, {loading: 'Saving...'})}} className='bg-gradient-to-br from-blue-100 to-blue-200 ring-blue-300 text-blue-600 ring hover:ring-blue-400 transition-all rounded-md px-6 py-2 mt-6 text-sm'>
                 Save Changes
               </button>
             </div>
@@ -198,7 +198,7 @@ const saveResume = async () => {
                       {resumeData.public ? <EyeIcon className="size-4"/> : <EyeOffIcon className="size-4"/>}
                       {resumeData.public ? 'Public' : 'Private'}
                     </button>
-                    <button onClick={downloadResume} className='flex items-center gap-2 px-6 py-2 text-xs bg-gradient-to-br from-green-100 to-green-200 text-green-600 rounded-lg ring-green-300 hover:ring transition-colors'>
+                    <button onClick={downloadResume} className='flex items-center gap-2 px-6 py-2 text-xs bg-gradient-to-br from-blue-100 to-blue-200 text-blue-600 rounded-lg ring-blue-300 hover:ring transition-colors'>
                       <DownloadIcon className='size-4'/> Download
                     </button>
                 </div>
